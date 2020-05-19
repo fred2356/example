@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nth-child()</title>
+	<link rel="stylesheet" href="../../css/style.css">
+   <link rel="stylesheet" href="../../css/nth-child.css">
+</head>
+<body>
+	
+<div class="menu">
+      <h3> Меню: </h3>
+      <p><a href="main.html">Главная</a></p>
+      <p><a href="englglish.html">English</a></p>
+      <p><a href="html.html">HTML</a></p>
+      <p><a href="faq.html">FAQ</p>
+      <p><a href="myday.html">Дневник</a></p>
+      <p><a href="goal.html">Мои цели на 2020</a></p>
+</div>
+
+  <div class="main">
+  <div class="text"> 
+
+<h3>HTML > :nth-child()</h3>
+
+Псевдокласс <code>:nth-child()</code> используется для выбора необходимых элементов из списка, вот пример его использования:
+
+<pre><code>
+.example tr:nth-child(2n+1) {
+      background:  lightgrey;
+}  
+</code></pre>
+
+в указанном примере выбирается каждый 2-ой элемент <code>tr</code> , начиная с самого первого его элемента и изменяет фоновый цвет этих элементов на светло-серый цвет.
+<br><br>
+
+<table class="example">
+   <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
+<br>
+
+Приницип работы <code>:nth-child()</code> следующий. <br>
+В скобках указывается параметр <code>(an+b)</code> - где <br>
+<code>a</code> - является элемент с которого мы начинаем;<br>
+<code>n</code> - является счётчиком и начинает свой счёт с 0 до бесконечности;<br>
+<code>b</code> - является число которое мы прибавляем для перехода к следующему элементу;<br><br>
+
+Итого, параметр <code>(2n+1)</code> означает следующее:<br>
+<br>
+
+<table class="count">
+   <tr>
+      <td>a</td>
+      <td>n</td>
+      <td>b</td>
+      <td>Расчёт</td>
+   </tr>
+   <tr>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>(2 * 0) + 1 = 1</td>
+   </tr>
+   <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>(2 * 1) + 1 = 3</td>
+   </tr>
+   <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>(2 * 2) + 1 = 5</td>
+   </tr>
+</table>
+<br>
+стоит обратить внимание на работу с отрицательным счётчиком <code>n</code>. Разберём пример <code>(-n+3)</code>
+<br><br>
+<table class="count">
+   <tr>
+      <td>a</td>
+      <td>-n</td>
+      <td>b</td>
+      <td>Расчёт</td>
+   </tr>
+   <tr>
+      <td>-</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0 + 3 = 3</td>
+   </tr>
+   <tr>
+      <td>-</td>
+      <td>-1</td>
+      <td>3</td>
+      <td>-1 + 3 = 2</td>
+   </tr>
+   <tr>
+      <td>-</td>
+      <td>-2</td>
+      <td>3</td>
+      <td>-2 + 3 = 1</td>
+   </tr>
+</table>
+<br>
+Полезная статья которая помогла мне до конца осознать принцип работы с <code>:nth-child()</code> <a href="">https://web-standards.ru/articles/nth-child/</a>
+
+   </div>
+   </div>
+
+   
+
+</body>
+</html>

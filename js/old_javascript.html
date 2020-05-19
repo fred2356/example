@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>123</title>
+    <style type="text/css">
+        .menu {
+            float: left;
+            background: #E8D9A9;
+            width: 200px;
+            height: 400px;
+            padding-left: 10px;
+        }
+
+        .main {
+            background: #ECC0A4;
+            width: 1200px;
+            height: 400px;
+            margin-left: 210px;
+        }
+
+        .text {
+            padding-left: 20px;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <h2> Меню: </h2>
+        <p><a href="main.html">Домой</a></p>
+        <p><a href="html.html">Чё то делаю по HTML</a></p>
+        <p><a href="myday.html">Чё то пишу </a></p>
+        <p><a href="goal.html">Цели на 2020</a></p>
+    </div>
+
+    <div class="main">
+        <div class="text">
+            <h3>Какой то список </h3>
+
+            <p>Что то тут пишу для комитов</p>
+
+            <p>
+                script type="text/javascript"
+            </p>
+
+            <p>
+                alert('Привет!');
+            </p>
+            <p>
+                var answer = confirm("Вы - Захар?");
+            </p>
+            <p>
+                var answer = prompt("Приветствую тебя, незнакомец. Нвзови своё имя","Захар");
+                console.log(answer);
+            </p>
+        </div>
+    </div>
+    <!--Пробую JavaScript-->
+    <script type="text/javascript">
+        var answer = prompt('Введите пароль:');
+        if (answer == '1234567') {
+            document.write('<h1>Succesful auth!</h1>');
+        } else {
+            document.write('<h1>Auth failed!</h1>');
+        }
+        console.log(answer);
+
+    </script>
+</body>
+
+</html>

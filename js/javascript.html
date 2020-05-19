@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaSript</title>
+    <link rel="stylesheet" href="../../css/style.css">
+<body>
+
+ <div class="menu">
+      <h3> Меню: </h3>
+      <p><a href="main.html">Главная</a></p>
+      <p><a href="english.html">English</a></p>
+      <p><a href="html.html">HTML</a></p>
+      <p><a href="faq.html">FAQ</p>
+      <p><a href="myday.html">Дневник</a></p>
+      <p><a href="goal.html">Мои цели на 2020</a></p>
+</div>
+
+<div class="main">
+<div class="text"> 
+
+<h3>JavaSript</h3>
+
+<code>script</code>
+Для подключения на странице JavaScript нужно в body указать 
+<pre><code>
+    &lt;body&gt;
+  &lt;script src="themes.js"&gt;&lt;/script&gt;
+  &lt;script src="likes.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+</code></pre>
+
+<code>console.log</code>
+<p>console.log // Выведет: Привет от JavaScript! <br>
+console.log(document.querySelector('.page')); // Выведет в консоль найденный элемент</p>
+
+<p><code>querySelector</code>
+Эта инструкция состоит из двух частей. Первая часть — элемент, внутри которого будет искать JavaScript. Словом document обозначается веб-страница, к которой скрипт подключён. Неважно, как называется файл на самом деле, в JavaScript это всегда «документ». Он является элементом-родителем для любого другого элемента на странице.
+
+Вторая часть инструкции — это то, что нужно сделать. Её называют методом.
+</p>
+
+<h3>Методы изменения класса</h3>
+
+<p><code>classList.remove</code>
+Он убирает с элемента тот класс, который указан в скобках:
+элемент.classList.remove('класс');</p>
+
+<p><code>classList.add</code>
+Добавляет элементу класс элемент.classList.add('класс');</p>
+
+<p><code>classList.toggle</code>
+Метод-переключатель, убирает у элемента указанный класс, если он есть, и добавляет, если этого класса нет: элемент.classList.toggle('класс');</p>
+
+<p><code>textContent</code>
+Хранит в себе текстовое содержимое элемента. Свойствам можно присваивать новые значения:
+
+<pre><code>Пример:
+let paragraph = document.querySelector('p');
+paragraph.textContent = 'Здесь был Кекс. Мяу!';</code></pre></p>
+
+<p><code>classList.contains</code> элемент.classList.contains('класс')
+проверить, есть ли у элемента класс и возвращает true / false</p>
+
+<p><code>value</code>
+Свойство поля ввода. Оно хранит данные, введённые в поле. Мы можем вывести их прямо на страницу:
+
+let input = document.querySelector('input');
+paragraph.textContent = input.value;</p>
+
+<h3>Конкатенация</h3>
+
+<p>Операция, когда мы «склеиваем» несколько значений, называется конкатенацией и в JavaScript выполняется с помощью знака плюс. <pre><code>let name = 'Кекс';
+paragraph.textContent = 'Вас зовут ' + name + '. Хорошего дня!';
+console.log(paragraph.textContent);
+// Выведет: Вас зовут Кекс. Хорошего дня!</code></pre></p>
+
+<h3>Обработчики событий onclick и onsubmit</h3>
+
+<p><code>onclick</code> означает «по клику»:
+
+<pre><code>let button = document.querySelector('button');
+button.onclick = function() {
+  console.log('Кнопка нажата!');
+};
+</code></pre>
+Инструкции, которые должны будут выполниться, когда событие произойдёт, располагают между фигурных скобок. При каждом клике по кнопке в консоли будет появляться новое сообщение Кнопка нажата!.</p>
+
+<code>onsubmit</code> обработка отправки формы:
+
+<p><pre><code>let form = document.querySelector('form');
+form.onsubmit = function() {
+  console.log('Форма отправлена!');
+};
+</code></pre>
+После отправки формы в консоли появится сообщение Форма отправлена!.</p>
+
+<h3>Условная конструкция</h3>
+Условная конструкция позволяет выполнять действия в зависимости от условия. Условие — это инструкция, которая возвращает true или false. Выглядит условная конструкция так:
+
+<pre><code>if (условие) {
+  // Инструкции, которые выполнятся, если условие истинно
+} else {
+  // Инструкции, которые выполнятся, если условие ложно
+}</code></pre>
+
+<h3>Добавление элементов</h3>
+<code>append</code>
+добавляет указанный в скобках элемент в конец элемента-родителя. При этом содержимое элемента-родителя не затирается. Добавлять с помощью этого метода можно и элементы, и простые строки.
+
+<p><code>createElement</code>
+Чтобы создать новый элемент на странице, к которой подключён скрипт, нужно использовать слово document. Внутри скобок в кавычках указывают элемент, который нужно создать. Например:
+<pre><code>// Создаём новый элемент &lt;div&gt; и записываем его в переменную
+let newElement = document.createElement('div');
+</code></pre>
+
+Новый элемент будет доступен из скрипта, но в разметке не появится, пока мы не скажем JavaScript, где разместить новый элемент. Для этого можно использовать метод append:
+
+<pre><code>// Находим элемент-родитель
+let parent = document.querySelector('.parent');
+
+// Добавляем новый элемент на страницу
+parent.append(newElement);</code></pre>
+
+Элементы, созданные с помощью метода createElement, можно изменять так же, как и любые другие.
+
+</p>
+<h3>Очищаем поле ввода</h3>
+Чтобы пользователь по ошибке не отправил форму несколько раз, после отправки поле ввода лучше очистить. Для этого в его свойство value записывают пустую строку. Вот так:
+<pre><code>let input = document.querySelector('input');
+input.value = '';</code></pre>
+</div>
+</div>
+
+</body>
+
+</html>
