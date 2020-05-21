@@ -1,0 +1,24 @@
+code {
+	background: white;
+}
+
+table {
+	border-collapse: collapse;
+	width: 30%;
+	background: white;
+	text-align: center;
+}
+
+td {
+	border: 1px solid black;
+	width: 25%;
+}
+
+.example tr:nth-child(2n+1) {
+	background:  lightgrey;
+}
+
+.count tr:nth-child(1) {
+	background: lightgrey;
+	font-weight: bold; 
+}

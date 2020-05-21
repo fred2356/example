@@ -1,0 +1,76 @@
+/*Урок про аккордеон https://www.youtube.com/watch?v=U1649CHBmT4*/
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	line-height: 1.2;
+	background-color: #64badd; 
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.accordion {
+	max-width: 320px;
+	box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.accordion_item {
+	background: #353535;
+	color: white;
+}
+
+.accordion_title {
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	background-color: #272727;
+	outline: none;
+	cursor: pointer;
+	border-bottom: 1px solid #777;
+	padding: 10px 40px 10px 20px;
+	transition: 0.3s all;
+	position: relative;
+}
+
+.accordion_title:hover {
+	background-color: #111;
+}
+
+.accordion_title:after {
+	display: block;
+	content: '▼';
+	font-size: 12px;
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: 0.3s all;
+}
+.accordion_body {
+	padding: 20px;
+}
+
+.accordion_item:not([open]):last_child.accordion_title {
+	border-bottom: 1px solid transparent;
+}
+
+.accordion_item[open] .accordion_title::after {
+	transform: translateY(-50%) rotate(180deg);
+}
