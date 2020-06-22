@@ -7,13 +7,18 @@ html, body {
 }
 
 .wrap {
+<<<<<<< HEAD
     background-color: #34495e;
+=======
+    /* background-color: #34495e; */
+>>>>>>> 768f8ed2d3788550b2c6d321b8c871b26662e8a7
     /* height: 350px; */
 }
 
 .header {
     background-color: #c0392b;
-    margin: 20px 200px;
+    margin: 20px auto;
+    width: 1050px;
     height: 50px;
     color: white;
 }
@@ -25,20 +30,22 @@ html, body {
 }
 
 .promo {
-    margin: 20px 200px;
+    margin: 20px auto;
     color: white;
+    width: 1050px;
+    background-color: aqua;
 }
 
 .promo1 {
     background-color: #c0392b;
-    width: 700px;
+    width: 470px;
     height: 200px;
     float: left;
 }
 
 .promo2 {
     background-color: #c0392b;
-    width: 700px;
+    width: 470px;
     height: 200px;
     float: right;
 }
@@ -50,6 +57,7 @@ html, body {
 }
 
 .wrap-main {
+<<<<<<< HEAD
     background-color: white;
     width: 100%;
     height: 100%;
@@ -61,6 +69,25 @@ html, body {
     float: left;
     height: 300px;
     width: 625px;
+=======
+    background-color: gray;
+    margin: auto;
+    width: 1050px;
+}
+
+.left {
+    background-color: #3498db;
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+.main {
+    background-color: #3498db;
+    float: left;
+    height: 300px;
+    width: 300px;
+>>>>>>> 768f8ed2d3788550b2c6d321b8c871b26662e8a7
     margin-right: 20px;
 }
 
