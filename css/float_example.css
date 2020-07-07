@@ -1,36 +1,38 @@
 html, body {
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .wrap {
     background-color: #34495e;
-    /* background-color: #34495e; */
-    /* height: 350px; */
+    padding-top: 20px;
 }
 
 .header {
     background-color: #c0392b;
-    margin: 20px auto;
+    margin: auto;
     width: 1050px;
     height: 50px;
     color: white;
+    text-indent: 8px;
 }
 
 .menu {
     background-color: #3498db;
+    margin-top: 20px;
     height: 50px;
     color: white;
+    text-indent: 440px;
 }
 
 .promo {
     margin: 20px auto;
     color: white;
     width: 1050px;
-    background-color: aqua;
+    background-color: #34495e;
+    text-indent: 8px;
 }
 
 .promo1 {
@@ -54,41 +56,38 @@ html, body {
 }
 
 .wrap-main {
-<<<<<<< HEAD
     background-color: white;
-    width: 100%;
-    height: 100%;
-    padding: 20px 10px;
+    /* width: 100%;
+    height: 100%; */
+    /* padding: 20px 10px; */
+    /* margin: auto; */
+    padding-bottom: 20px;
+}
+.wrap-container {
+    width: 1050px;
+    margin: auto;
+    color: white;
+    margin-top: 20px;
+    text-indent: 8px;
 }
 
 .colum {
     background-color: #3498db;
     float: left;
     height: 300px;
-    width: 625px;
-=======
-    background-color: gray;
-    margin: auto;
-    width: 1050px;
+    width: 400px;
+    margin-right: 24px;
 }
 
-.left {
+.colum_lr {
     background-color: #3498db;
     float: left;
     height: 300px;
     width: 300px;
-    margin: auto;
-}
-.main {
-    background-color: #3498db;
-    float: left;
-    height: 300px;
-    width: 300px;
->>>>>>> 768f8ed2d3788550b2c6d321b8c871b26662e8a7
-    margin-right: 20px;
+    margin-right: 24px;
 }
 
-.wrap-main:last-child(3) {
+.colum_lr:last-child {
     margin-right: 0px;
 }
 
@@ -96,4 +95,11 @@ html, body {
     content: "";
     display: table;
     clear: both;
+}
+
+.footer {
+    background-color: #34495e;
+    height: 50px;
+    color: white;
+    text-indent: 440px;
 }
