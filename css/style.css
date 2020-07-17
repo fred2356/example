@@ -1,5 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
-    background: lightgreen;
+    background: #525354;
+    color: white;
+    height: 38px;
 }
 
 footer {
@@ -7,11 +14,23 @@ footer {
 }
 
 .menu {
-    float: left;
-    background: #E8D9A9;
-    width: 10%;
-    height: auto;
-    padding-left: 1%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.menu li {
+    display: inline;
+    padding: 0px 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #999;
+    transition: color 0.1s;
 }
         
 .main {
@@ -65,11 +84,10 @@ code {
   border: 1px dotted white;
 }
 
-.attention {
+/* .attention {
     border: 1px solid red;
     display: inline-table;
     margin: 0px;
     list-style-type: none;
     padding: 5px;
-}
-
+} */
