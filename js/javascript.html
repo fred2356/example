@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
  <header>
    <ul class="menu">
-    <li><a href="/index.html">Logo</a></li>
-    <li><a href="/html.html">HTML</a></li>
-    <li><a href="/js.html">JavaSript</a></li>
-    <li><a href="/php.html">PHP</a></li>
-    <li><a href="/faq.html">FAQ</a></li>
+    <li><a href="index.html">Logo</a></li>
+    <li><a href="html.html">HTML</a></li>
+    <li><a href="js.html">JavaSript</a></li>
+    <li><a href="php.html">PHP</a></li>
+    <li><a href="faq.html">FAQ</a></li>
  </header> 
 
 <div class="main">
 <div class="text"> 
 
 <h3>JavaSript</h3>
-
+<br>
 <code>script</code>
+<br>
 Для подключения на странице JavaScript нужно в body указать 
 <pre><code>
     &lt;body&gt;
@@ -29,10 +30,12 @@
     &lt;/body&gt;
 </code></pre>
 
+<h3>Вывод инфомрации в консоль</h3>
 <code>console.log</code>
 <p>console.log // Выведет: Привет от JavaScript! <br>
 console.log(document.querySelector('.page')); // Выведет в консоль найденный элемент</p>
 
+<h3>Находим элемент с помощью querySelector</h3>
 <p><code>querySelector</code>
 Эта инструкция состоит из двух частей. Первая часть — элемент, внутри которого будет искать JavaScript. Словом document обозначается веб-страница, к которой скрипт подключён. Неважно, как называется файл на самом деле, в JavaScript это всегда «документ». Он является элементом-родителем для любого другого элемента на странице.
 
