@@ -7,5 +7,9 @@
 }
 
 .added {
-    background-color: royalblue;
+    background-color: blueviolet;
+}
+
+.is-important {
+    background-color: chocolate;
 }
