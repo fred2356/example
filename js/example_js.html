@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="text background1">
-    <p>Хочу тут змаенить фон</p>
+    <p data-text="Проверка 1">Хочу тут змаенить фон</p>
     </div>
     <div class="number">0</div>
 <button class="button">Кнопка</button>
@@ -16,13 +16,22 @@
 <br><br>
 
 <form class="comment-form">
-<input type="text" class="comment-field" placeholder="Напишите текст" value="">
-<button type="button" class="todo-priority">Обычная задача</button>
-<button type="submit" class="button-comment">Отправить</button>
+    <textarea name="" id="" cols="30" rows="10" class="comment-field" placeholder="Напишите тут текст"></textarea>
+    <span>Использовано <output class="char-counter">0</output> / 142 символов </span>
+    <br>
+        <button type="button" class="todo-priority">Обычная задача</button>
+        <button type="submit" class="button-comment">Отправить</button>
 </form>
 
 <ol class="comment-list">
 </ol>
+
+
+<button class="click-data">Data</button>
+
+<p data-text="Проверка 2"></p>
+<p data-text="Проверка 3"></p>
+
 
 <script src="script.js"></script>
 </body>

@@ -48,6 +48,32 @@ commentForm.onsubmit = function (evt) {
     newComment.textContent = commentField.value;
     commentList.append(newComment);
     commentField.value = '';
+    charCounter.textContent = '0';
   };
 
+// Разбираюсь с атрибутом data
 
+let clickData = document.querySelector('.click-data');
+let dataNames = document.querySelectorAll('p');
+  for (let dataName of dataNames) {
+    clickData.onclick = function () {
+    console.log(dataName);
+        }
+  }
+
+// Считаю колличество введенных символов через oninput
+
+let charCounter = document.querySelector('.char-counter');
+let buttonComment = document.querySelector('.button-comment');
+commentField.oninput = function () { 
+    charCounter.textContent = commentField.value.length;
+
+    if (commentField.value.length > 142) {
+        charCounter.classList.add('warning');
+        buttonComment.disabled = true;
+    }
+        else {
+            charCounter.classList.remove('warning');
+            buttonComment.disabled = false;
+        }
+};

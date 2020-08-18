@@ -13,3 +13,7 @@
 .is-important {
     background-color: chocolate;
 }
+
+.warning {
+    color: red;
+}
